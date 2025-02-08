@@ -1,0 +1,498 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+}
+
+html,body{
+    background: #0d131f28;
+  display: flex;
+
+  flex-wrap: wrap;
+   justify-content: center;
+ 
+    height: 100vh;
+    width: 100vw;
+}
+
+section{
+    height: 100%;
+    width: 100%;
+    background: rgb(17, 17, 17);
+
+    background-image: url(../IMG/bachg.webp);
+    background-size: cover;
+    background-blend-mode: multiply;
+    
+    
+    
+}
+img{
+    position: relative;
+    top: 40px;
+    height: 200px;
+    width: 200px;
+    float: right;
+    
+
+
+}
+#man{
+
+    position: sticky;
+    right: 20px;
+    top: 100px;
+    z-index: 2;
+    height: 150px;
+    width: 150px;
+}
+header{
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    left: 0;
+    background: #0d131f73;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 2px 2px  3px #09d309e3,
+    -2px -2px  3px #09d309e3;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index: 2;
+}
+
+a{
+    left: 10px;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    background:#06c206;
+    height: 40px;
+    width: 170px;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid #0ca349;
+    align-content: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px  3px #09d309e3,
+    -2px -2px  3px #09d309e3;
+}
+.content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+justify-content: center;
+align-items: center;
+display: flex;
+
+    
+    
+}
+i{
+    color: #fff;
+}
+
+#banner{
+    position: absolute;
+    height: 350px;
+    width: 70%;
+  
+    top: 185px;
+    left:20px;
+   
+    border-radius: 5px;
+    box-shadow: 2px 2px  3px #09d309e3,
+    -2px -2px  3px #09d309e3;
+}
+#myimage{
+    position: absolute;
+    top: 180px;
+    width: 320px;
+    height: 350px;
+    right: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px  2px #09d309e3,
+    -2px -2px  2px #09d309e3;
+}
+.instruct{
+    position:absolute;
+    height: 400px;
+    width:450px;
+    background: #0000002d;
+    color: #06c206;
+    left: 25px;
+    justify-content: start;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    box-shadow: 2px 2px  3px #09d30949,
+    -2px -2px  3px #09d30949;
+}
+strong{
+  color: #0ca349;
+}
+ul{
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+overflow: hidden;
+  width:400px ;
+  height: 300px;
+}
+ul li{
+  list-style-type: none;
+  background: #0c0c0c91;
+  color: #8eeb9a;
+  font-size: 14px;
+  height: 30px;
+  align-content: center;
+  animation: rules 4s steps(100, end), blink3 0.6s step-end infinite;
+  animation-duration: 4s;
+  animation-delay: 15s;
+  animation-iteration-count: 2;
+
+ 
+}
+
+hr{
+    border: 1px solid #06c206;
+    width: 42%;
+}
+
+  .typing-hd{
+  
+    height: 10;
+    width: 46%;
+    overflow: hidden;
+   
+    border-right: 2px solid #06c206;
+    animation: typing 4s steps(100, end), blink 0.6s step-end infinite;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+  }
+  
+  @keyframes typing{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 46%;
+    }
+  }
+  @keyframes blink {
+    0%{
+      border-right-color: transparent;
+    }
+    100%{
+      border-right-color: #06c206;
+      border-right-color: transparent;
+    }
+  }
+  p{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+ 
+    
+  background: #0000001a;
+
+    color: #06c206;
+    box-shadow: 2px 2px  3px #09d3090a,
+    -2px -2px  3px #09d3090a;
+  }
+  .link{
+    position: absolute;
+    float: right;
+    right: 80px;
+    height: 200px;
+    top: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 660px;
+    background: #0000002d;
+    border-radius: 3px;
+    box-shadow: 2px 2px  3px #09d30949,
+    -2px -2px  3px #09d30949;
+  }
+  #audio{
+    position: absolute;
+    left: 80px;
+    top: 10px;
+    background: #00000023;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 2px 2px  2px #09d309e3,
+    -2px -2px  2px #09d309e3;
+  }
+  i{
+    position: absolute;
+    right: 70px;
+    color: #06c206;
+    font-size: 20px;
+    z-index: 3;
+    cursor: pointer;
+    
+  }
+
+  .copy-link{
+    width: 100%;
+    height: 55px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  input{
+    position: absolute;
+    width: 80%;
+    height: 55px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 0 0 0 30px;
+    color: #06c206;
+    background: #0000002d;
+    box-shadow: 2px 2px  3px #09d309b4,
+    -2px -2px  3px #09d309b4;
+   
+  }
+  form{
+    position: absolute;
+    top: auto;
+    bottom: 10px;
+    height: 250px;
+    width: 400px;
+    right: 80px;
+    background: #0000002d;
+    border-radius: 3px;
+    box-shadow: 2px 2px  3px #09d30949,
+    -2px -2px  3px #09d30949;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  input[name="flag-input"]:focus{
+    box-shadow: 2px 2px 3px #09d309,
+    -2px -2px   3px #09d309;
+  
+  }
+  button{
+    position: absolute;
+    bottom: 10px;
+    width: 200px;
+    height: 44px;
+    background-color: #06c20613;
+    color:#06c206;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    border: 2px solid #0ca349;
+    box-shadow: 2px 2px  3px #09d30991,
+    -2px -2px  3px #09d30991;
+    cursor: pointer;
+  }
+ 
+  .art{
+    position: absolute;
+    right: 10px;
+    top: auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+   bottom: 2px;
+
+    height: 50px;
+    width: 300px;
+    background: #0000000e;
+  }
+  #gif{
+    position: relative;
+    top:80px;
+    height: 90px;
+    width: 150px;
+    background: #0000002d;
+  }
+  #disc{
+    position: absolute;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     font-size: 13px;
+     height: 40px;
+  bottom: 0;
+     width: 90%;
+     border-right: 2px solid #06c206;
+     overflow: hidden;
+    border-right: 2px solid #06c206;
+    animation: art 4s steps(100, end), blink2 0.6s step-end infinite;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    animation-delay: 20s;
+  }
+
+  @keyframes art{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 90%;
+    }
+  }
+  @keyframes blink2 {
+    0%{
+      border-right-color: transparent;
+    }
+    100%{
+      border-right-color: #06c206;
+      border-right-color: transparent;
+    }
+  }
+  h3{
+    position: absolute;
+    top: 10px;
+    color: #06c206;
+ 
+  }
+  @media(max-width:600px){
+    html, body {
+      overflow-x: hidden; /* Prevent horizontal scroll on small screens */
+    }
+    
+    section{
+       width:100vw;
+       min-height:100vh;
+      position: relative;
+   
+    }
+    header{
+      position: fixed;
+     
+    }
+    #banner{
+  
+      bottom: 100px;
+      width: 60%;
+      height: 20%;
+      left: 5px;
+    }
+    #myimage{
+      width:95%;
+      height: 45%;
+      top: 310px;
+      right: 10px;
+    }
+    #man{
+      height: 12%;
+      width: 12%;
+  
+    }
+    #gif{
+      top: 200px;
+      right: 0;
+      height: 15%;
+      width: 25%;
+    }
+    p{
+      font-size: 12px;
+      left: 10px;
+      font-weight: 700;
+      color: #fff;
+    }
+    i{
+      color: #09d309;
+      right: 30px;
+    }
+    a{
+      height: 40%;
+      width: 20%;
+      font-size: 9px;
+  
+    }
+    .instruct{
+      top: 10px;
+      height: 50%;
+      width: 95%;
+      left: 10px;
+    
+    }
+    ul{
+      top: 50px;
+
+      height: 210px;
+    }
+    ul li{
+      font-size: 10px;
+     width: 70%;
+
+    }
+    #str{
+  
+       left: 25px;
+       width: 100px;
+    }
+  
+    .link{
+     height: 20%;
+     width: 90%;
+     top: 300px;
+     right: 10px;
+    }
+    .art{
+    display: none;
+    }
+    form{
+      bottom: 10px;
+      width: 90%;
+      height: 20%;
+      right: 10px;
+    }
+    button{
+      width: 100px;
+      height: 22px;
+      font-size: 11px;
+    }
+    input{
+      width: 90%;
+      height: 30px;
+      font-size: 11px;
+    }
+    #audio{
+      position: absolute;
+      left: 30px;
+      top: 20px;
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+    }
+    #link{
+
+      font-size: 9px;
+      padding: 0 0 0 10px;
+    }
+
+  
+  }
